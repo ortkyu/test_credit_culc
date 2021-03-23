@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./modalOne.css";
+import classnames from "classnames";
 
-export const Modal = ({toggle}) => {
+export const Modal = ({ toggle }) => {
   const [inputValue, setInputValue] = useState(0);
   const [arrayPayments, setArrayPayments] = useState([]);
   const [error, setError] = useState(null);
@@ -22,6 +23,8 @@ export const Modal = ({toggle}) => {
       }
     }
   };
+
+  const inputStyle = classnames("input_idle", { err: error });
 
   return (
     <div className="wrap">
@@ -45,7 +48,7 @@ export const Modal = ({toggle}) => {
           налогового вычета составляет не более 13% от своего официального
           годового дохода.
         </p>
-        <div className="input_idle">
+        <div className={inputStyle}>
           <div className="salary">Ваша зарплата в месяц</div>
           <input
             required={true}

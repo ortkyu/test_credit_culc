@@ -62,7 +62,7 @@
   color: #000000;
 }
 
-.modalOne input {
+.input_idle input {
   width: 389px;
   height: 40px;
   margin-top: 8px;
@@ -71,6 +71,10 @@
   border: 1px solid #dfe3e6;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.err input {
+  border: 2px solid red;
 }
 
 .modalOne input:hover {
