@@ -54,7 +54,7 @@ export const Main = () => {
             <div className="input_idle">
               <div className="salary">Ваша зарплата в месяц</div>
               <input
-                required="true"
+                required={true}
                 onChange={(e) => setInputValue(e.target.value)}
                 placeholder="Введите данные"
               />
@@ -69,10 +69,10 @@ export const Main = () => {
               </div>
               <form className="checkBox_label">
                 {arrayPayments.map((p, i) => (
-                  <div>
+                  <div key={i}>
                     <div className="input_label_wrap">
                       <input type="checkbox" id={i} />
-                      <label for={i}>{p}</label>
+                      <label htmlFor={i}>{p}</label>
                       <div className="yearPay">в {i + 1} год</div>
                     </div>
                     <div className="line"></div>
