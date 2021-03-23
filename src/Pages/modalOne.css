@@ -1,0 +1,322 @@
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modalOne {
+  margin: 100px 0px;
+  font-family: "LabGrotesque";
+  width: 453px;
+  background: #ffffff;
+  border-radius: 30px;
+}
+
+.modalOne svg {
+  width: 18px;
+  height: 18px;
+  margin-left: 380px;
+  margin-top: 27px;
+}
+
+.taxDeduction {
+  text-align: left;
+  width: 235px;
+  height: 40px;
+  margin-left: 32px;
+  margin-top: -27px;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.info {
+  max-width: 369px;
+  min-height: 72px;
+  margin-left: 32px;
+  margin-top: 16px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+  color: #808080;
+}
+
+.input_idle {
+  width: 389px;
+  height: 72px;
+  margin-top: 24px;
+  margin-left: 32px;
+}
+
+.salary {
+  text-align: left;
+  width: 155px;
+  height: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.modalOne input {
+  width: 389px;
+  height: 40px;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 24px;
+  border: 1px solid #dfe3e6;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.modalOne input:hover {
+  border: 1px solid #000;
+}
+
+.modalOne input[placeholder] {
+  padding-left: 10px;
+}
+
+.calculation {
+  text-align: left;
+  width: 76px;
+  height: 24px;
+  margin-left: 32px;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ea0029;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin: 10px;
+}
+
+.wrapPay {
+  display: flex;
+  width: 334px;
+  height: 36px;
+  margin-left: 32px;
+  margin-top: 24px;
+}
+
+.change {
+  text-align: left;
+  width: 112px;
+  height: 24px;
+  margin-left: 2px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.pay {
+  width: 73px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 73px;
+  height: 36px;
+  margin-left: 76px;
+  background: linear-gradient(
+      255.35deg,
+      #dc3131 0.83%,
+      rgba(255, 79, 79, 0) 108.93%
+    ),
+    #ff5e56;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.textPay {
+  width: 49px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.yearPay {
+  color: #808080;
+  margin-left: 10px;
+}
+
+.deadline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57px;
+  height: 36px;
+  margin-left: 16px;
+  background: #eef0f2;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.deadlineText {
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.buttonAdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 389px;
+  height: 56px;
+  margin-left: 32px;
+  margin-top: 40px;
+  margin-bottom: 32px;
+  background: linear-gradient(
+      255.35deg,
+      #dc3131 0.83%,
+      rgba(255, 79, 79, 0) 108.93%
+    ),
+    #ff5e56;
+  box-shadow: 0px 0px 24px rgba(234, 0, 41, 0.33);
+  border-radius: 6px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.buttonAdd:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.checkBox input {
+  display: flex;
+  appearance: none;
+  outline: none;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 1px solid #dfe3e6;
+  box-sizing: border-box;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.checkBox:hover {
+  border: #0000;
+}
+
+.checkBox input:checked {
+  background: linear-gradient(
+      255.35deg,
+      #dc3131 0.83%,
+      rgba(255, 79, 79, 0) 108.93%
+    ),
+    #ff5e56;
+}
+
+.checkBox input:after {
+  content: url(../assets/Vector.png);
+  margin-top: -2px;
+  margin-left: 2px;
+  display: none;
+}
+
+.checkBox input:after png {
+  width: 14px;
+  height: 11px;
+  color: #fff;
+}
+
+.checkBox input:checked:after {
+  display: flex;
+}
+
+.checkBox_label input {
+  padding: 0;
+  margin: 0;
+}
+.input_label_wrap {
+  margin-left: 32px;
+  margin-top: 18px;
+  display: flex;
+  width: 193px;
+  height: 24px;
+}
+
+.line {
+  width: 389px;
+  margin-top: 16px;
+  margin-left: 32px;
+  border-bottom: 1px solid#DFE3E6;
+}
+
+.checkBox_label label {
+  margin-left: 12px;
+}
+
+.sum {
+  margin-left: 32px;
+  margin-top: 16px;
+  text-align: left;
+  width: 295px;
+  height: 24px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
+@media all and (max-width: 500px) {
+  .modalOne {
+    width: 90%;
+    margin: 3rem;
+  }
+  .taxDeduction {
+    width: 70%;
+    font-size: 24px;
+  }
+  .info {
+    max-width: 85%;
+    font-size: 13px;
+  }
+  .input_idle input {
+    display: flex;
+    justify-content: flex-start;
+    width: 73%;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .salary,
+  .calculation,
+  .change,
+  .sum {
+    font-size: 13px;
+  }
+  .pay {
+    margin-left: 28px;
+  }
+  .buttonAdd {
+    width: 83%;
+  }
+  .modalOne svg {
+    margin-left: 83%;
+  }
+  .line {
+    width: 80%;
+  }
+}
